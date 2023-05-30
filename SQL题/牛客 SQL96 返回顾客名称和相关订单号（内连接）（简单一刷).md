@@ -1,6 +1,6 @@
 # 题目
 
-![image-20230416163251796](markdown-image/牛客 SQL96 返回顾客名称和相关订单号.assets/image-20230416163251796.png)
+![image-20230416163251796](image/image-20230416163251796.png)
 
 
 
@@ -23,7 +23,7 @@ on c.cust_id = o.cust_id Order by cust_name asc;
 
 结果正确
 
-![image-20230416163416356](markdown-image/牛客 SQL96 返回顾客名称和相关订单号.assets/image-20230416163416356.png)
+![image-20230416163416356](image/image-20230416163416356.png)
 
 
 
@@ -53,7 +53,6 @@ order by cust_name,order_num;
 
 
 ```sql
-
 select cust_name,order_num
 from Customers
 INNER JOIN Orders ON Orders.cust_id=Customers.cust_id
